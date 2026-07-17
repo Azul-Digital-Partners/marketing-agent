@@ -1,0 +1,35 @@
+# Secrets and credentials — never commit these
+.env
+.env.local
+data_sources/config/.env
+credentials/
+*.pem
+*.key
+*.p12
+token.json
+credentials.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Temporary files
+.tmp/
+*.tmp
+
+# Session state
+state/
+
+# macOS
+.DS_Store
+
+# Generated output (not source)
+output/
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,23 @@
+<!--
+  GA4 gtag snippet — paste into the <head> of every page.
+
+  Replace G-XXXXXXXXXX with the Measurement ID from the GA4 web data stream
+  for the specific domain (do NOT reuse one ID across both Azul domains).
+
+  For [yourdomain.com]: place IMMEDIATELY ABOVE the existing Plausible
+  <script async src="https://plausible.io/js/..."> tag so both fire on load.
+
+  For azuldigitaladvisory.ai (GoDaddy CMS): paste into the global header
+  script-injection area of the site builder. Publish.
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'anonymize_ip': true,
+    'send_page_view': true
+  });
+</script>
