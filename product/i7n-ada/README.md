@@ -9,6 +9,7 @@ Responses to Section 9 of the CEO handoff. Everything here is a proposal. Nothin
 | 3 | Scan results page to Tier 2 upsell | [03-scan-to-tier2-upsell.md](03-scan-to-tier2-upsell.md) |
 | 4 | Tier 1 and Tier 2 pricing options | [04-pricing-options.md](04-pricing-options.md) |
 | 5 | Elemental and CCA case study plan | [05-elemental-cca-case-study-plan.md](05-elemental-cca-case-study-plan.md) |
+| 6 | Defensibility review instructions | [06-defensibility-review-prompt.md](06-defensibility-review-prompt.md) |
 
 Evidence comes from `Azul-Digital-Partners/i7n-platform` at commit `d4edb15`.
 
