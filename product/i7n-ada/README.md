@@ -10,6 +10,7 @@ Responses to Section 9 of the CEO handoff. Everything here is a proposal. Nothin
 | 4 | Tier 1 and Tier 2 pricing options | [04-pricing-options.md](04-pricing-options.md) |
 | 5 | Elemental and CCA case study plan | [05-elemental-cca-case-study-plan.md](05-elemental-cca-case-study-plan.md) |
 | 6 | Defensibility review instructions | [06-defensibility-review-prompt.md](06-defensibility-review-prompt.md) |
+| 7 | CCA Florida review: root causes and fix plan | [07-cca-review-fix-plan.md](07-cca-review-fix-plan.md) |
 
 Evidence comes from `Azul-Digital-Partners/i7n-platform` at commit `d4edb15`.
 

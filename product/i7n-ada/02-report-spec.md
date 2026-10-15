@@ -1,6 +1,16 @@
 # 02. Expert-Reviewed ADA Report: Draft Spec
 
-Status: draft for CEO approval. Hold all changes until the outside defensibility review is done (Section 10).
+Status: draft for CEO approval. Revised after the outside review of the CCA Florida rerun. See `07-cca-review-fix-plan.md`.
+
+Changes from the review:
+
+- Section 2 leads with the before and after issue count from the remediation record.
+- Section 2 shows a detected accessibility overlay as the first item.
+- Section 4 states the environment (production or staging) and filters out-of-scope domains.
+- Section 5 uses three coverage buckets with no percentages.
+- Section 7 drops 3.2.2 new-window and 4.1.1 findings to Advisory.
+- Section 10 shows experience, not certification, until you hold one.
+- Next steps point to i7n expert review, not an outside specialist.
 
 Design rules:
 
@@ -32,6 +42,8 @@ Fields marked AUTO are filled by the system. EXPERT means you fill or confirm th
 - Issue counts by severity (AUTO)
 - Top three priorities in plain language (EXPERT, prefilled from the highest-severity findings)
 - Remediation status: open, fixed, verified (AUTO)
+- Before and after, on reruns: "[previous count] issues on [date]. [current count] on [date]." (AUTO, from stable finding fingerprints)
+- Overlay notice, when detected, shown first: "An accessibility overlay is installed. Overlays do not fix the underlying code. Review the accessibility statement the overlay publishes for your organization." (AUTO)
 
 No grades or letter scores. A "C+" invites argument. A criterion count doesn't.
 
@@ -63,6 +75,9 @@ Plus:
 - How pages were selected: full crawl, or representative sample by template (EXPERT picks one)
 - Browser and assistive technology used in expert review (EXPERT)
 - Out of scope, stated explicitly: third-party embeds, PDFs, mobile apps, pages behind login (EXPERT edits)
+- Environment assessed: production or staging, with the domain (EXPERT). Staging results prove process, not current conformance. Say so when staging is used.
+- Flows not tested and why, e.g. "Checkout not submitted to avoid live transactions" (EXPERT)
+- Findings on domains outside scope are dropped from the count (AUTO)
 
 Scope is the section that protects the customer and you. A report without stated limits gets read as covering everything.
 
@@ -74,6 +89,16 @@ Fixed plain-language text. Only describe steps that actually happen.
 > 2. Expert review. The assessor reviewed every automated finding, removed false positives, and adjusted severity where needed.
 > 3. Manual testing. The assessor tested the user flows listed in Scope using keyboard only and [screen reader name]. The assessor evaluated criteria that software cannot reliably test, such as meaningful alt text, logical reading order, and clear error messages.
 > 4. Result. Each WCAG 2.2 AA success criterion received one of four results: Supports, Partially supports, Does not support, Not applicable.
+
+Coverage table, one row per bucket (AUTO counts):
+
+| Bucket | Meaning | Criteria |
+|---|---|---|
+| Automated | Software decides pass or fail | [n] |
+| Partly automated | Software flags candidates, the assessor confirms | [n] |
+| Manual | The assessor evaluates directly | [n] |
+
+No percentages. No "auto-pass". If automated checks find nothing for a criterion, it still needs the assessor's result before the report is signed.
 
 Step 3's wording depends on what you actually do per report. Confirm the exact manual steps and tools. The system should only print the tools you tick in the review screen.
 
