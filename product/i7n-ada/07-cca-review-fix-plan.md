@@ -100,7 +100,21 @@ Items 1 to 6 are the Tier 2 minimum, per the review. The estimates are engineeri
 
 Total: about 14 engineering days for all eleven. Items 1 to 6: about 11.
 
-Fast path for the CCA deliverable: items 2, 3, 7 and 9 are about 2 days and remove the worst lines and the inflated count. Ship CCA on that, then reissue in the full Tier 2 format once items 1, 4, 5 and 6 land.
+CEO direction (Oct 16): fix the platform for every customer, not a CCA patch. No separate note to Elemental.
+
+## Status
+
+PR 1 in `i7n-platform` covers items 1 (coverage buckets, no percentages), 2, 3, 4, 7 and 9, plus a finding the review didn't name:
+
+- WCAG 2.2 criteria used draft numbering. "2.4.11 Focus Appearance (Minimum), Level AA" is now "2.4.11 Focus Not Obscured (Minimum)". Focus Appearance is 2.4.13 at Level AAA, so its findings are now advisory.
+
+Next PRs:
+
+- Item 5: one summary file feeding every output
+- Item 6: assessor block, expert notes, Disposition values
+- Item 8: scope block and domain filter
+- Item 10: executive deck capped at 20 slides
+- Scan results page and site copy still say "WCAG 2.1" and "of 50". That belongs to Step 2 (funnel).
 
 ## What the review says already works
 
