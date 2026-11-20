@@ -1,5 +1,7 @@
 # Marketing Workspace
 
+@handoff/executor-rules.md
+
 ## First-Run Check
 
 On every session start, check whether this workspace has been configured:
